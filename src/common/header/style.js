@@ -20,7 +20,7 @@ export const Logo = styled.div`
 `;
 
 export const Nav = styled.div`
-	width: 960px;
+	width: 1080px;
 	height: 100%;
 	padding-right: 70px;
 	box-sizing: border-box;
@@ -39,8 +39,15 @@ export const NavItem = styled.div`
 		float: right;
 		color: #969696;
 	}
+	.icon-zuanshi{
+		margin-top: 15px;
+		height: 25px
+	}
 	&.active {
 		color: #ea6f5a;
+	}
+	.iconfont{
+		font-size: 20px;
 	}
 `;
 
@@ -65,7 +72,7 @@ export const SearchWrapper = styled.div`
 export const NavSearch = styled.input.attrs({
 	placeholder: '搜索'
 })`
-	width: 160px;
+	width: 240px;
 	height: 38px;
 	padding: 0 30px 0 20px;
 	margin-top: 9px;
@@ -81,19 +88,19 @@ export const NavSearch = styled.input.attrs({
 		color: #999;
 	}
 	&.focused {
-		width: 240px;
+		width: 300px;
 	}
 	&.slide-enter {
 		transition: all .2s ease-out;
 	}
 	&.slide-enter-active {
-		width: 240px;
+		width: 300px;
 	}
 	&.slide-exit {
 		transition: all .2s ease-out;
 	}
 	&.slide-exit-active {
-		width: 160px;
+		width: 240px;
 	}
 `;
 
@@ -148,7 +155,7 @@ export const SearchInfoItem = styled.a`
 
 export const Addition = styled.div`
 	position: absolute;
-	right: 0;
+	right: 220px;
 	top: 0;
 	height: 56px;
 `;
@@ -157,11 +164,13 @@ export const Button = styled.div`
 	float: right;
 	margin-top: 9px;
 	margin-right: 20px;
-	padding: 0 20px;
+	padding: 0 25px;
 	line-height: 38px;
+	height: 38px;
 	border-radius: 19px;
+	box-sizing: border-box;
 	border: 1px solid #ec6149;
-	font-siz: 14px;
+	font-size: 14px;
 	&.reg {
 		color: #ec6149;
 	}

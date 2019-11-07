@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const HomeWrapper = styled.div`
-  overflow: hidden;
   width: 960px;
   margin: 0 auto;
 `
@@ -77,6 +76,27 @@ export const ListInfo = styled.div`
     line-height: 24px;
     font-size: 13px;
     color: #999;
+  }
+  .bottom {
+    margin-top: 10px;
+    display: flex;
+    color: #b4b4b4;
+    font-size: 12px;
+    line-height: 12px;
+    .zuan-number {
+      font-size: 12px;
+      color: #ea6f5a;
+      .iconfont {
+        font-style: normal;
+        font-weight: 400 !important;
+      }
+      margin-right: 10px;
+    }
+    .icon-wrapper {
+      font-size: 12px;
+      color: #b4b4b4;
+      margin-left: 10px;
+    }
   }
 `
 

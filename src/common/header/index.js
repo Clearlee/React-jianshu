@@ -91,17 +91,30 @@ class Header extends Component {
             <Logo />
           </Link>
           <Nav>
-            <NavItem className="left active">首页</NavItem>
-            <NavItem className="left">下载App</NavItem>
+            <NavItem className="left active">
+              <i className="iconfont">&#xe654;</i>发现
+            </NavItem>
+            <NavItem className="left">
+              <i className="iconfont">&#xe62e;</i> 关注
+            </NavItem>
+            <NavItem className="left">
+              <i className="iconfont">&#xe61f;</i> 消息
+            </NavItem>
             {login ? (
               <NavItem onClick={logout} className="right">
                 退出
               </NavItem>
             ) : (
               <Link to="/login">
-                <NavItem className="right">登陆</NavItem>
+                <NavItem className="right">登录</NavItem>
               </Link>
             )}
+            <NavItem className="right">
+              <img
+                src="https://cdn2.jianshu.io/assets/web/nav_jsds_beta-eeb44d165b8ba37680fdb7e65ae17ae4.png"
+                className="icon-zuanshi"
+              />
+            </NavItem>
             <NavItem className="right">
               <i className="iconfont ">&#xe636;</i>
             </NavItem>
@@ -124,7 +137,8 @@ class Header extends Component {
           <Addition>
             <Link to="/write">
               <Button className="writting">
-				  <i className='iconfont'>&#xe615;</i>写文章</Button>
+                <i className="iconfont">&#xe615;</i>写文章
+              </Button>
             </Link>
             <Button className="reg">注册</Button>
           </Addition>
